@@ -23,7 +23,7 @@ document.getElementById('loginForm')?.addEventListener('submit', function (e) {
     const storedUser = JSON.parse(localStorage.getItem(email));
 
     if (storedUser && storedUser.password === password) {
-        alert(`Welcome back, ${storedUser.name}!`);
+        window.location.href = 'homePage.html'; // Redirect to Mantasha Page
     } else {
         alert('Invalid email or password.');
     }
