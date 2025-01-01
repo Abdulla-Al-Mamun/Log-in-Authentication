@@ -27,4 +27,13 @@ document.getElementById('loginForm')?.addEventListener('submit', function (e) {
     } else {
         alert('Invalid email or password.');
     }
+
 });
+// Logout Functionality
+document.getElementById('logoutBtn')?.addEventListener('click', function () {
+    // Redirect to Login Page
+    window.location.href = 'index.html';
+});
+
+
+
